@@ -15,9 +15,9 @@ const captcha = require('quest-image-captcha-js');
 ```
 *quest-image-captcha-js* exports the following methods:
 ```javascript
-getCaptcha = async (code, backgroundChars = backgroundCharsDefault, backgroundColor = backgroudColorDefault)
+getCaptcha = async (code = "GENERATE", backgroundChars = backgroundCharsDefault, backgroundColor = backgroudColorDefault)
 ```
-* The mandatory parameter is *code* which represents a string which is displayed on the image
+* The parameter *code* represents a string which is displayed on the image, left empty it will generate a uuidv4.
 * The first optional parameter is *backgroundChars* (default value is [...'0123456789']) which indicates which characters are displayed on the background as "garbage"
 * The second optional parameter is *backgroundColor* (default value is 0xFFFFFFFF) which indicates the background color of the captcha image (it's not recommended to set the opacity to 00 as it makes easier to recognize the captcha image)
 
