@@ -1,5 +1,5 @@
 {
-  "name": "zoia-captcha",
+  "name": "quest-image-captcha-js",
   "version": "1.0.6",
   "description": "Captcha image generator based on JIMP",
   "main": "lib/index.js",
