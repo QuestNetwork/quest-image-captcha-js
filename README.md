@@ -1,6 +1,6 @@
 ## Quest Image Captcha JS
 
-> Quick Example To Integrate P2P Challenges As A Starting Off Point For Challenge Generation/Validation In P2P Apps Like [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js), forked from: https://github.com/xtremespb/zoia-captcha
+> Quick Example To Integrate P2P Challenges As A Starting Off Point For Decentralized Challenge Generation/Validation In P2P Apps Like [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js), forked from: https://github.com/xtremespb/zoia-captcha
 
 ## Installation 
 1. Make sure you've cloned this repository into the same folder as your Quest Network apps.
