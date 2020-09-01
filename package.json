@@ -24,6 +24,7 @@
     "url": "git+https://github.com/xtremespb/zoia-captcha"
   },
   "dependencies": {
-    "jimp": "^0.13.0"
+    "jimp": "^0.13.0",
+    "uuid": "^8.3.0"
   }
 }
