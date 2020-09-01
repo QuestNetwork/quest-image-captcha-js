@@ -1,18 +1,19 @@
-# Zoia Captcha
+## Quest Image Captcha JS
 
-Zoia Captcha (zoia-captcha) is a library for captcha generation based on JIMP (no external dependenices like ImageMagick or GD are required). 
+> Quick Example To Integrate P2P Challenges As A Starting Off Point For Challenge Generation/Validation In P2P Apps Like [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js), forked from: https://github.com/xtremespb/zoia-captcha
 
-## Usage
-
-First, install the latest version of *zoia-captcha* from NPM:
-
-`npm i zoia-captcha --save`
-
-Then you need to include *zoia-captcha* in your code:
-```javascript
-const captcha = require('zoia-captcha');
+## Installation 
+1. Make sure you've cloned this repository into the same folder as your Quest Network apps.
+2. Go to the root directory of your Quest Network app, for example [Quest Messenger JS](https://github.com/QuestNetwork/quest-messenger-js) and:
 ```
-*zoia-captcha* exports the following methods:
+npm install --save ../quest-image-captcha-js
+```
+
+Then you need to include *quest-image-captcha-js* in your code:
+```javascript
+const captcha = require('quest-image-captcha-js');
+```
+*quest-image-captcha-js* exports the following methods:
 ```javascript
 getCaptcha = async (code, backgroundChars = backgroundCharsDefault, backgroundColor = backgroudColorDefault)
 ```
@@ -26,10 +27,10 @@ The method *getCaptcha* returns a promise and resolves a binary image buffer.
 
 To save the result image to a file, you may use the following code:
 ```javascript
-const zcaptcha = require('zoia-captcha');
+const qCaptcha = require('quest-image-captcha-js');
 const fs = require('fs');
 const test = async() => {
-	const img = await zcaptcha.getCaptcha('1234');
+	const img = await qCaptcha.getCaptcha('1234');
 	fs.writeFileSync('image.png', img);
 };
 test();
