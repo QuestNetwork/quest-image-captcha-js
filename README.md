@@ -39,7 +39,7 @@ In the following example there is a 4-digit captcha is returned as an *Express* 
 ```javascript
 const getCaptcha = async (req, res) => {
     const code = Math.random().toString().substr(2, 4);
-    const image = await captcha.getCaptcha(code);
+    const image = await qCaptcha.getCaptcha(code);
     res.writeHead(200, {
         'Content-Type': 'image/png'
     });
