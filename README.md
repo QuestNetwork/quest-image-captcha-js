@@ -11,7 +11,7 @@ npm install --save ../quest-image-captcha-js
 
 Then you need to include *quest-image-captcha-js* in your code:
 ```javascript
-const captcha = require('quest-image-captcha-js');
+const captcha = require('@questnetwork/quest-image-captcha-js');
 ```
 *quest-image-captcha-js* exports the following methods:
 ```javascript
